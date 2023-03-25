@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registeration Form</title>
+    <style>
+        body{
+           background-color: #F6E1C3;
+           background-image: url(pixel.jpg);
+           
+            
+        }
+        .Mydiv{
+            
+            font-family: "Times New Roman", Times, serif;
+            font-style: bold;
+            color:black;
+
+        }
+        form {max-width: 600px;
+         margin: 0 auto;
+         padding: 30px;
+         background-color: #DDDDDD;
+         
+         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+         border: 2px solid black;
+         border-radius: 4px;  
+ 
+
+         
+         
+         background-size: contain;
+         
+     }
+    
+
+     /* CSS styles for form heading */
+     
+
+     /* CSS styles for form elements */
+     label {
+         display: block;
+         margin-bottom: 10px;
+         font-weight: bold;
+         color: black;
+     }
+
+     input[type="text"],
+     select,
+     textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border-radius: 5px;
+         border: none;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+         background-color: #fff;
+         font-size: 16px;
+         color: #333;
+     }
+     input[type="number"],
+     select,
+     textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border-radius: 5px;
+         border: none;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+         background-color: #fff;
+         font-size: 16px;
+         color: #333;
+     }
+     input[type="email"],
+     select,
+     textarea {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 20px;
+         border-radius: 5px;
+         border: none;
+         box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+         background-color: #fff;
+         font-size: 16px;
+         color: #333;
+     }
+
+
+     select {
+         height: 40px;
+     }
+
+     textarea {
+         height: 150px;
+         resize: none;
+         font-family: "Open Sans", sans-serif;
+     }
+
+     input[type="submit"] {
+         background-color: brown;
+         color: white;
+         padding: 10px 20px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 18px;
+         text-transform: uppercase;
+         transition: background-color 0.3s ease;
+     }
+    
+
+ </style>
+  <script src="forms.js"></script>
+</head>
+<body>
+    
+   <form name="surveyForm" onsubmit="return validateForm()" method="post">
+        <div class="Mydiv">
+            <h1>New Customer Registeration form</h1>
+        </div>
+
+        
+        <div>
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="Date">Date of Birth:</label>
+        <input type="Date" id="name" name="name" required>
+            
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="number">Contact no:</label>
+        <input type="number" id="float" name="float" required>
+
+        <br>
+      
+        <label for="industry">From where did you hear about us:</label>
+        <select id="industry" name="industry">
+            <option value="please select">Please select</option>
+            <option value="Social media">Social media</option>
+            <option value="Newspaper">Newspaper</option>
+            <option value="Internet">Internet</option>
+            <option value="other">Other</option>
+        </select>
+      
+        <label for="feedback">Suggest for any further improvement:</label>
+        <textarea id="feedback" name="feedback" required></textarea>
+         
+        
+        <label for="rating">Will you recommend us:</label>
+        <input type="radio" id="rating-1" name="rating" value="1"> 
+        <label for="rating-1">Yes</label><br>
+        <input type="radio" id="rating-2" name="rating" value="2">
+        <label for="rating-2">No</label><br>
+        <input type="radio" id="rating-3" name="rating" value="3">
+        <label for="rating-2">Maybe</label><br>
+        
+        <input type="submit" value="submit">
+         
+    </div>
+       
+    </form>
+        
+</form>
+</body>
+</html>
